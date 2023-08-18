@@ -8,7 +8,7 @@ import Store from './src/helper/utils/redux/Store';
 
 const App = () => {
   return (
-    <Provider store={Store_addCase}>
+    <Provider store={Store}>
    <MainNavigationStack/>
     </Provider>
   );

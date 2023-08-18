@@ -12,8 +12,9 @@ const Header = props => {
         paddingVertical: 18,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
+        height:75
       }}>
-      <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 25}}>
+      <View style={{flexDirection: 'row', alignItems: 'center', }}>
         <TouchableOpacity>
           <MI
             style={{marginLeft: 5, color: '#fff'}}

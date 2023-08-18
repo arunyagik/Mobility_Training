@@ -18,6 +18,12 @@ import DateTimeScreen from '../../screens/task/DateTimeScreen';
 import ReduxScreen from '../../screens/reduxtask/ReduxScreen';
 import ShowTaskComponent from '../../components/shared/showTaskComponent/ShowTaskComponent';
 import TaskListTrainiingProject from '../../screens/reduxtask/TaskListTrainiingProject';
+import ProductCategory from '../../screens/SFATask.js/ProductCategory';
+import CategoryComponent from '../../screens/SFATask.js/CategoryComponent';
+import ProductComponent from '../../screens/SFATask.js/ProductComponent';
+import ShowTotal from '../../screens/SFATask.js/ShowTotal';
+import ConfirmOrder from '../../screens/SFATask.js/ConfirmOrder';
+
 const MainNavigationStack = props => {
   const Stack = createStackNavigator();
   useEffect(() => {
@@ -27,16 +33,44 @@ const MainNavigationStack = props => {
     
     <NavigationContainer>
       <Stack.Navigator headerShown={false}>
+      
+      
+      <Stack.Screen
+          name="ProductCategory"
+          component={ProductCategory}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="CategoryComponent"
+          component={CategoryComponent}
+          options={{headerShown: false}}
+        />
+      <Stack.Screen
+          name="ProductComponent"
+          component={ProductComponent}
+          options={{headerShown: false}}
+        /> 
+        <Stack.Screen
+          name="ShowTotal"
+          component={ShowTotal}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ConfirmOrder"
+          component={ConfirmOrder}
+          options={{headerShown: false}}
+        />
+
       {/* <Stack.Screen
           name="CheckBox"
           component={CheckBox}
           options={{headerShown: false}}
         /> */}
-      <Stack.Screen
+      {/* <Stack.Screen
           name="TaskListTrainiingProject"
           component={TaskListTrainiingProject}
           options={{headerShown: false}}
-        />
+        /> */}
       {/* <Stack.Screen
           name="ReduxScreen"
           component={ReduxScreen}

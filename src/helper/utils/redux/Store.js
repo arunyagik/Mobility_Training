@@ -4,8 +4,8 @@ import SecondData from './slice/SecondData'
 import ThirdData from './slice/ThirdData'
 import CheckBox  from './slice/CheckBoxSlice'
 import CalculatorSlice from './slice/CalculatorSlice'
-import TextSlice, { updateText } from './slice/TextSlice'
-import { deleteText,fullfillText } from './slice/TextSlice'
+import TextSlice from './slice/TextSlice'
+import SFASlice from './slice/SFASlice'
 
 export default configureStore({
   reducer: {
@@ -16,9 +16,7 @@ export default configureStore({
  CheckBox:CheckBox,
  CalculatorSlice:CalculatorSlice,
  TextSlice:TextSlice,
- deleteArrow:TextSlice,
- fullfillText:TextSlice,
- updateText:TextSlice,
+ SFASlice:SFASlice,
 
   }
 })
