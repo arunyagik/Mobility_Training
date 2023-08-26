@@ -23,7 +23,9 @@ import CategoryComponent from '../../screens/SFATask.js/CategoryComponent';
 import ProductComponent from '../../screens/SFATask.js/ProductComponent';
 import ShowTotal from '../../screens/SFATask.js/ShowTotal';
 import ConfirmOrder from '../../screens/SFATask.js/ConfirmOrder';
-
+import MobileNumber from '../../screens/SFA_AuthScreens/MobileNumber';
+import OTPScreen from '../../screens/SFA_AuthScreens/OTPScreen';
+import Dashboard from '../../screens/SFA_AuthScreens/Dashboard';
 const MainNavigationStack = props => {
   const Stack = createStackNavigator();
   useEffect(() => {
@@ -33,7 +35,22 @@ const MainNavigationStack = props => {
     
     <NavigationContainer>
       <Stack.Navigator headerShown={false}>
-      
+     
+      <Stack.Screen
+          name="MobileNumber"
+          component={MobileNumber}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="OTPScreen"
+          component={OTPScreen}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="Dashboard"
+          component={Dashboard}
+          options={{headerShown: false}}
+        />
       
       <Stack.Screen
           name="ProductCategory"

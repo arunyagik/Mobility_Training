@@ -8,12 +8,12 @@ const FullSizeButton = props => {
   return (
     <TouchableOpacity onPress={props.onPress}>
       <LinearGradient
-        colors={['#02c7c9', '#0bb8d4']}
+        colors={['#3862f8', '#3862f8']}
         style={{
           flexDirection: 'row',
           justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 30,
+          alignSelf: 'center',
+          borderRadius: 10,
           paddingVertical: 12,
           // width:'100%'
           width:props.width,

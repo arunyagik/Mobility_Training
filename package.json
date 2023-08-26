@@ -29,6 +29,8 @@
     "npm": "^9.8.1",
     "react": "18.2.0",
     "react-native": "0.72.1",
+    "react-native-confirmation-code-field": "^7.3.1",
+    "react-native-countdown-timer-hooks": "^1.0.4",
     "react-native-gesture-handler": "^2.12.0",
     "react-native-linear-gradient": "^2.7.3",
     "react-native-numeric-input": "^1.9.1",
